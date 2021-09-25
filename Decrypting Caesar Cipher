@@ -1,0 +1,9 @@
+alph=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+cipherText = input()
+for i in range(1,27):
+	temp = ''
+	for j in range(len(cipherText)):
+		temp = temp + (alph[((alph.index(cipherText[j])+ i)%26)])
+	print(temp)
+	print("Shift key is",i)
+  
